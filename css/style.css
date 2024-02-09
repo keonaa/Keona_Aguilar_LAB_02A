@@ -247,18 +247,43 @@ textarea {
 
 /** new stuff that we worked on. delete the stuff up top if needed */
 
+.container {
+  border: solid blue 2px;
+}
+
+.container-2 {
+  border: solid blue 2px;
+}
+
+.container-3 {
+  border: solid blue 2px;
+}
+
+.container-4 {
+  border: solid blue 2px;
+}
+
 .container-grid-4-1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   text-align: center;
-  color: red;
+  border: solid purple 2px;
 }
+
 
 .container-2-grid-3-1 {
   display: grid;
   text-align: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:repeat(1fr,1fr)
+}
+
+.container-2-grid-3-1 div:nth-child(1) {
+  grid-column: span 2;
+}
+
+.container-2-grid-3-1 div:nth-child(4) {
+  display: none;
 }
 
 .container-3-grid-3-2 {
@@ -266,7 +291,6 @@ textarea {
   text-align: center;
   grid-template-columns: repeat(3, 2fr);
   gap: 10px;
-  color: green;
 }
 
 .container-4-grid-2-1 {
@@ -286,11 +310,25 @@ textarea {
 }
 
 .menu-container-grid-6-1 {
-  display: grid;
-  text-align: center;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
+  display: inline-grid;
+  grid-template-columns: repeat(6, minmax(80px, 1fr));
+  align-content: center;
   color: lightskyblue;
+  border: solid yellow 5px;
+}
+
+.bourgir {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  display: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  border: solid yellow 5px;
+
 }
 
 .main {
@@ -300,25 +338,43 @@ textarea {
   margin-right: 20%;
 }
 
+.sub-header-container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  border: solid blue 2px;
+}
+
 .container-sub {
   display: grid;
   justify-content: center;
+  border: solid yellow 2px;
 }
 
 .sub-header-container-2 {
   display: grid;
   justify-content: center;
+  border: solid yellow 2px;
+}
+
+.box {
+  border: solid yellow 2px;
 }
 
 .sub-header-container-3 {
   display: grid;
   justify-content: center;
+  border: solid yellow 2px;
 }
 
 .sub-header-container-4 {
   display: grid;
   justify-content: center;
-}
+  border: solid yellow 2px;
+  }
+
+
 
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -327,12 +383,17 @@ textarea {
 .main-header-container {
   display: grid;
   justify-content: center;
+  border: solid red 2px;
 }
 
 .footer-container {
   display: grid;
   justify-content: center;
   border: solid blue 2px;
+}
+
+.square {
+  border: solid yellow 2px;
 }
 
 .box img {
@@ -348,9 +409,97 @@ textarea {
 .intro {
   display: grid;
   justify-content: center;
+  border: solid blue 2px;
 }
 
 .big-card {
   border: solid red 2px;
 }
 
+.m-col-1 {
+  border: solid yellow 2px;
+}
+
+/* Phone */
+@media screen and (max-width: 39.9375em) {
+  .menu-container-grid-6-1{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .menu-container-grid-6-1>h6{
+    display: none;
+  }
+  .bourgir {
+    display: block !important;
+    width: 15%;
+    height: 15%;
+    margin-top: 2%;
+}
+  .sub-header-container {
+    width: 100vw;
+  }
+  .logo{
+    margin: auto;
+  }
+  .container-grid-4-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-2-grid-3-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .container-2-grid-3-1 div:nth-child(1) {
+    grid-column: span 1;
+  }
+  
+  .container-2-grid-3-1 div:nth-child(4) {
+    display: inline-block;
+  }
+  
+  .container-3-grid-3-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-4 {
+    display: none;
+  }
+  .container-5-grid-5-1 {
+    display: none;
+  }
+  .container-grid-4-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .container-grid-4-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .container-2-grid-3-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .container-2-grid-3-1 div:nth-child(4) {
+    display: inline-block;
+  }
+  .container-2-grid-3-1 div:nth-child(1) {
+    grid-column: span 1;
+  }
+  .container-3-grid-3-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+  }
+  .container-4-grid-2-1 {
+    grid-template-columns: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-grid-4-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
