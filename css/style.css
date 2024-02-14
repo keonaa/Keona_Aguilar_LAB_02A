@@ -369,13 +369,11 @@ textarea {
 .container-sub {
   display: grid;
   justify-content: center;
-  border: solid yellow 2px;
 }
 
 .sub-header-container-2 {
   display: grid;
   justify-content: center;
-  border: solid yellow 2px;
 }
 
 .box {
@@ -463,9 +461,6 @@ textarea {
   width: 100%;
 }
 
-.m-col-1 {
-  border: solid yellow 2px;
-}
 
 .m-col-1 p{
   font-size: 0.5rem;
@@ -478,7 +473,6 @@ textarea {
 }
 
 .footer-container {
-  border: solid blue 2px;
   min-height: 100px;  
 }
 
@@ -490,7 +484,6 @@ textarea {
 .peewee-photo {
   margin-right: auto;
   margin-bottom: auto;
-  border: solid red 2px;
 }
 
 .peewee-photo img {
@@ -513,7 +506,6 @@ textarea {
 }
 
 .card-container {
-  border: solid blue 2px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
@@ -566,6 +558,17 @@ textarea {
 .footer-content{
   width:80%;
 }
+
+.footer-grid-auto img {
+  height: 4rem;
+  width: 6rem;
+}
+
+.footer-grid-auto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /* Phone */
 @media screen and (max-width: 39.9375em) {
   .menu-container-grid-6-1{
