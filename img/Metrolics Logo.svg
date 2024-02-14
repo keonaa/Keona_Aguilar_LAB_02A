@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 105">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5ebf8e;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #438fb8;
+      }
+
+      .cls-3 {
+        fill: #cf6a65;
+      }
+
+      .cls-4 {
+        fill: #f5bc41;
+      }
+
+      .cls-5 {
+        fill: #f5bb41;
+      }
+    </style>
+  </defs>
+  <g id="Metrolics-Logo">
+    <g id="Metrolics_Logo" data-name="Metrolics Logo">
+      <rect class="cls-1" width="35" height="35"/>
+      <rect class="cls-5" x="70" width="35" height="35"/>
+      <rect class="cls-2" x="35" y="35" width="35" height="35"/>
+      <rect class="cls-4" y="70" width="35" height="35"/>
+      <rect class="cls-3" x="70" y="70" width="35" height="35"/>
+    </g>
+  </g>
+</svg>
